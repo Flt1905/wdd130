@@ -20,18 +20,18 @@
     padding: 20px;
 }
 
-.h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
     color: var(--primary-color);
 
 }
 
-.header{
+header{
     padding: 20px;
     background-color: var(--accent1-color);
 }
 
-.p{
+p{
     padding: 25px;
 }
 nav{
