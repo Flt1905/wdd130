@@ -23,7 +23,6 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
     color: var(--primary-color);
-
 }
 
 header{
@@ -48,7 +47,6 @@ nav a{
 
 nav a:link, nav a :visited{
     color: var(--nav-link-color);
-
 }
 
 nav a:hover {
