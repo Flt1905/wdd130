@@ -1,0 +1,18 @@
+@import url('https://fonts.google.com/specimen/Lato?preview.text=fulufhelo%20tshilande');
+
+
+
+:root{--primary-color: #b8c0ff;
+    --secondary-color: #c8b6ff;
+    --accent1-color:#bbd0ff;
+    --accent2-color:#e7c6ff;
+
+    --heading-font:'40px',Lato;
+--paragraph-font:'14px', Lato;
+
+
+--nav-background-color:blue;
+--nav-link-color:steelblue;
+--nav-hover-link-color:violet;
+--nav-hover-background-color:blue;}
+
