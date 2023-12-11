@@ -1,8 +1,8 @@
 @import url('https://fonts.google.com/specimen/Lato?preview.text=fulufhelo%20tshilande');
 
 
-
-:root{--primary-color: #b8c0ff;
+/* Root pseudo-class */
+:root{--primary-color: black;
     --secondary-color: #c8b6ff;
     --accent1-color:#bbd0ff;
     --accent2-color:#e7c6ff;
@@ -11,8 +11,81 @@
 --paragraph-font:'14px', Lato;
 
 
---nav-background-color:blue;
+--nav-background-color:#90E0EF,;
 --nav-link-color:steelblue;
 --nav-hover-link-color:violet;
---nav-hover-background-color:blue;}
+--nav-hover-background-color:#CAF0F8;}
 
+
+
+
+
+}
+
+h1 {
+    position: absolute
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+
+
+/* editing paragraphs */
+p{
+    padding: 25px;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 400px;
+    padding: 20px;
+
+/* This will remove the underline of all links */
+a {
+    text-decoration: none;
+  }
+
+
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+
+nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a :visited{
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color:var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+
+.hero img {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+article img {
+    
+    position: float;
+    float: right;
+    
+}
