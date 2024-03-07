@@ -20,7 +20,7 @@ nav a{
 h1{
   color: steelblue;
 }
-main img{
+main img {
   width: 150px;
   height: auto;
   border: 1px solid steelblue;
@@ -30,7 +30,7 @@ main img{
 }
 
 p{
-  padding : 10px;
+  padding : 0;
 }
 
 main{ 
@@ -44,10 +44,10 @@ main{
 aside {
   width: 20rem;
   margin: 1rem ;
-  /*border: 1px solid rgba(0,0,0,0.2);*/
+  border: 1px solid rgba(0,0,0,0.2);
   padding: 1rem;
-  /*background-color: #eee ;*/
-  /*color: #333;*/
+  background-color: #eee ;
+  color: #333;
   
 }
 
