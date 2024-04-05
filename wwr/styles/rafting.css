@@ -42,6 +42,7 @@ body{
     font-family: var(--paragraph-font);
     max-width: 400px;
     padding: 20px;
+}
 
 /* This will remove the underline of all links */
 a {
@@ -83,8 +84,7 @@ nav a:hover {
  height: auto;
 }
 
-article img {
-    
+article img { 
     position: float;
     float: right;
 }
