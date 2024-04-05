@@ -43,6 +43,8 @@ p{
 
 main{ 
   max-width:840px;/*keep*/
+  grid-column: 2/3;
+  margin: 1rem;
 }
 
 
@@ -58,6 +60,8 @@ aside {
   color: #333;
   text-align:center;
   position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
   
 }
 
