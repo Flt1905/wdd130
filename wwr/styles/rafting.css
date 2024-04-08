@@ -2,19 +2,20 @@
 
 
 /* Root pseudo-class */
-:root{--primary-color: black;
-    --secondary-color: #c8b6ff;
-    --accent1-color:#bbd0ff;
-    --accent2-color:#e7c6ff;
+:root {
+    --primary-color: #fff; /* White for primary text on darker backgrounds */
+    --secondary-color: #ccc; /* Light gray for secondary text */
+    --accent1-color: #4a90e2; /* Blue for water theme */
+    --accent2-color: #90caf9; /* Light blue for water theme */
 
-    --heading-font:'40px',Lato;
---paragraph-font:'14px', Lato;
+    --heading-font: 'Arial', sans-serif; /* Arial font for headings */
+    --paragraph-font: 'Arial', sans-serif; /* Arial font for paragraphs */
 
-
---nav-background-color:#90E0EF,;
---nav-link-color:steelblue;
---nav-hover-link-color:violet;
---nav-hover-background-color:#CAF0F8;}
+    --nav-background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for navigation background */
+    --nav-link-color: #fff; /* White for navigation links */
+    --nav-hover-link-color: #f7f7f7; /* Light gray for hovered navigation links */
+    --nav-hover-background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black for navigation background on hover */
+}
 
 
 
@@ -53,6 +54,9 @@ a {
 header{
     padding: 20px;
     background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes auto width, navigation takes remaining space */
+    align-items: center; /* Center vertically */
 }
 
 
@@ -60,6 +64,7 @@ nav{
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    margin: 50px;
 }
 nav a{
     display: block;
@@ -87,4 +92,63 @@ nav a:hover {
 article img { 
     position: float;
     float: right;
+}
+.history-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Align text center */
+}
+
+.history-section h2 {
+    font-size: 24px;
+    color: #333; /* Dark gray for heading */
+}
+
+.history-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666; /* Medium gray for paragraph text */
+}
+
+.history-section img {
+    width: 100%; /* Ensure image spans full width */
+    height: auto;
+    max-width: 600px; /* Adjust maximum width as needed */
+    margin-top: 20px; /* Add margin between paragraphs and image */
+}
+
+
+
+.adventures-section {
+    margin-top: 30px;
+}
+
+.adventures-section h2 {
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+}
+
+.adventures-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    gap: 20px; /* Gap between figures */
+}
+
+.adventures-container figure {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align content */
+}
+
+.adventures-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners if desired */
+}
+
+.adventures-container figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666; /* Adjust color as needed */
 }
