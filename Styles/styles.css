@@ -98,8 +98,9 @@ footer{
 }
 
 header, footer,.grid  {
-  max-width: 840px;
   margin: 0 auto;
+  max-width: 840px;
+  ;
 }
 
 .grid {
