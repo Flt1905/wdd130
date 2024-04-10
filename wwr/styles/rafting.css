@@ -20,9 +20,7 @@
 
 
 
-h1 {
-    position: absolute
-}
+
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
@@ -46,9 +44,45 @@ a {
 header{
     padding: 20px;
     background-color: var(--accent1-color);
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
        
+h1 {
+    position: absolute;
+    font-size : 2rem
 }
 
+
+nav {
+	text-align: right;
+}
+
+nav {
+	display: flex;
+	list-style: none;
+}
+
+nav {
+	flex: 1 1 100%;
+}
+
+nav a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: non;
+}
 
 
 
@@ -68,3 +102,34 @@ article img {
     position: absolute;
     float: right;
 }
+
+
+
+section {
+
+
+}
+
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+  }
+  
+  img {
+    max-width: 220px;
+    max-height: 150px;
+  }
+  
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
