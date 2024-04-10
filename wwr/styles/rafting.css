@@ -20,9 +20,6 @@
 
 
 
-
-
-
 h1 {
     position: absolute
 }
@@ -39,11 +36,6 @@ p{
     padding: 25px;
 }
 
-body{
-    font-family: var(--paragraph-font);
-    max-width: 400px;
-    padding: 20px;
-}
 
 /* This will remove the underline of all links */
 a {
@@ -51,106 +43,28 @@ a {
   }
 
 
-  header {
+header{
     padding: 20px;
     background-color: var(--accent1-color);
-    display: grid;
-    align-items: center; /* Center contents vertically */
-    grid-template-columns: auto 1fr; /* Image takes auto width, navigation takes remaining space */
+       
 }
 
-nav {
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: flex-end; /* Align navigation to the end (right) of its container */
-    margin-left: auto; /* Push nav to the right by using auto margin */
-    margin-right: 20px; /* Add some additional margin to the right */
-}
 
-nav a{
-    display: block;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 4rem;
-}
 
-nav a:link, nav a :visited{
-    color: var(--nav-link-color);
-}
 
-nav a:hover {
-    color:var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
 
 
 .hero img {
+    position: relative;
  display: block;
- width: 100%;
+ width:100%;
  height: auto;
 }
 
+article {
+    position: absolute;
+}
 article img { 
-    position: float;
+    position: absolute;
     float: right;
-}
-.history-section {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Align text center */
-}
-
-.history-section h2 {
-    font-size: 24px;
-    color: #333; /* Dark gray for heading */
-}
-
-.history-section p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #666; /* Medium gray for paragraph text */
-}
-
-.history-section img {
-    width: 100%; /* Ensure image spans full width */
-    height: auto;
-    max-width: 600px; /* Adjust maximum width as needed */
-    margin-top: 20px; /* Add margin between paragraphs and image */
-}
-
-
-
-.adventures-section {
-    margin-top: 30px;
-}
-
-.adventures-section h2 {
-    font-size: 24px;
-    color: #333; /* Adjust color as needed */
-}
-
-.adventures-container {
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling if necessary */
-    gap: 20px; /* Gap between figures */
-}
-
-.adventures-container figure {
-    margin: 0; /* Remove default margin */
-    text-align: center; /* Center align content */
-}
-
-.adventures-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Add rounded corners if desired */
-}
-
-.adventures-container figcaption {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #666; /* Adjust color as needed */
 }
