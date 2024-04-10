@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Wild Waters</title>
+    <title>Contact | Wild Waters</title>
     <meta name="description" content="'Fulu Tshilande , WDD130, rafting website'">
     <meta name="author" content="Fulu Tshilande">
     <link rel="stylesheet" href="Styles/rafting.css">
@@ -19,57 +19,29 @@
         </nav>
     </header>
         <main> 
-            <div class="hero">
-
-                
-                <img src ="images/rafting14_600.jpg" alt="Rafting Site Logo:">
-                
-                    <h1>Wild Waters</h1>
-                    <article >
-                       
-                        <img src ="images/river-wide.jpg" alt="Rafting Site Logo:">
-                        <p>Hello! My name is Fulu Tshilande and I am from Soweto, South Africa. I enjoy learning how to code, making new friends, 
-                            cycling ,playing chess and playing soccer.If I could have any superpower, it would be to speak any language so I could connect with anyone in the world.I am amrried to a wonderful sister and together we have three amazing little ones. 
-                          
-                        </p>  
-                        
-                    
-                    </article>    
-                        
-            </div>
-            <section>
-                <h2> History</h2>
-                <p>Hello! “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                    
-                  </p>
-                  
-                    
-            </section>
-            <section class="adventure">
-                <h2>Adventure Awaits You!</h2>
-                
-                    <figure>
-                        <img src="images/istockphoto-133878255-170667a.webp" alt="Los Dientes del Diablo">
-                        <figcaption>Los Dientes del Diablo</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/istockphoto-139712133-170667a.webp" alt="Big Mallard">
-                        <figcaption>Big Mallard</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/istockphoto-526790013-170667a.webp" alt="Half Day Adventure">
-                        <figcaption>Half Day Adventure</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/istockphoto-994263842-170667a.webp" alt="Rapid Name">
-                        <figcaption>Rapid Name</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/istockphoto-1401891428-170667a.webp" alt="Adventure Name">
-                        <figcaption>Adventure Name</figcaption>
-                    </figure>
-                
-            </section>
+            <main>
+                <div id="feedback"></div>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email" />
+                        </li>
+                        <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
+            </main>
+            
             
         </main>
         <footer>
