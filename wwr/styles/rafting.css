@@ -3,7 +3,7 @@
 
 /* Root pseudo-class */
 :root {
-    --primary-color: #fff; /* White for primary text on darker backgrounds */
+    --primary-color: white; /* White for primary text on darker backgrounds */
     --secondary-color: #ccc; /* Light gray for secondary text */
     --accent1-color: #4a90e2; /* Blue for water theme */
     --accent2-color: #90caf9; /* Light blue for water theme */
@@ -11,7 +11,7 @@
     --heading-font: 'Arial', sans-serif; /* Arial font for headings */
     --paragraph-font: 'Arial', sans-serif; /* Arial font for paragraphs */
 
-    --nav-background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for navigation background */
+    --nav-background-color: blue; /* Semi-transparent white for navigation background */
     --nav-link-color: #fff; /* White for navigation links */
     --nav-hover-link-color: #f7f7f7; /* Light gray for hovered navigation links */
     --nav-hover-background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black for navigation background on hover */
@@ -51,26 +51,28 @@ a {
   }
 
 
-header{
+  header {
     padding: 20px;
     background-color: var(--accent1-color);
     display: grid;
-    grid-template-columns: auto 1fr; /* Logo takes auto width, navigation takes remaining space */
-    align-items: center; /* Center vertically */
+    align-items: center; /* Center contents vertically */
+    grid-template-columns: auto 1fr; /* Image takes auto width, navigation takes remaining space */
 }
 
-
-nav{
+nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
-    margin: 50px;
+    justify-content: flex-end; /* Align navigation to the end (right) of its container */
+    margin-left: auto; /* Push nav to the right by using auto margin */
+    margin-right: 20px; /* Add some additional margin to the right */
 }
+
 nav a{
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 4rem;
 }
 
 nav a:link, nav a :visited{

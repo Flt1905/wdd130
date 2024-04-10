@@ -1,23 +1,30 @@
 @import url('https://fonts.google.com/specimen/Lato?preview.text=fulufhelo%20tshilande');
 
-:root{--primary-color: #b8c0ff;
---secondary-color: #c8b6ff;
---accent1-color:#bbd0ff;
---accent2-color:#e7c6ff;
 
---heading-font:'40px',Lato;
---paragraph-font:'14px', Lato;
+/* Root pseudo-class */
+:root {
+    --primary-color: white; /* White for primary text on darker backgrounds */
+    --secondary-color: #ccc; /* Light gray for secondary text */
+    --accent1-color: #4a90e2; /* Blue for water theme */
+    --accent2-color: #90caf9; /* Light blue for water theme */
 
+    --heading-font: 'Arial', sans-serif; /* Arial font for headings */
+    --paragraph-font: 'Arial', sans-serif; /* Arial font for paragraphs */
 
---nav-background-color:blue;
---nav-link-color:steelblue;
---nav-hover-link-color:violet;
---nav-hover-background-color:blue;
+    --nav-background-color: blue; /* Semi-transparent white for navigation background */
+    --nav-link-color: #fff; /* White for navigation links */
+    --nav-hover-link-color: #f7f7f7; /* Light gray for hovered navigation links */
+    --nav-hover-background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black for navigation background on hover */
 }
-body{
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
+
+
+
+
+
+
+
+h1 {
+    position: absolute
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -25,18 +32,39 @@ h1, h2, h3, h4, h5, h6{
     color: var(--primary-color);
 }
 
-header{
-    padding: 20px;
-    background-color: var(--accent1-color);
-}
 
+
+/* editing paragraphs */
 p{
     padding: 25px;
 }
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* This will remove the underline of all links */
+a {
+    text-decoration: none;
+  }
+
+
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes auto width, navigation takes remaining space */
+    align-items: center; /* Center vertically */
+}
+
+
 nav{
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    margin: 50px;
 }
 nav a{
     display: block;
@@ -45,13 +73,84 @@ nav a{
     padding: 1rem;
 }
 
-nav a:link, nav a:visited {
+nav a:link, nav a :visited{
     color: var(--nav-link-color);
 }
 
 nav a:hover {
     color:var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+
+.hero img {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+article img { 
+    position: float;
+    float: right;
+}
+.history-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Align text center */
+}
+
+.history-section h2 {
+    font-size: 24px;
+    color: #333; /* Dark gray for heading */
+}
+
+.history-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666; /* Medium gray for paragraph text */
+}
+
+.history-section img {
+    width: 100%; /* Ensure image spans full width */
+    height: auto;
+    max-width: 600px; /* Adjust maximum width as needed */
+    margin-top: 20px; /* Add margin between paragraphs and image */
+}
+
+
+
+.adventures-section {
+    margin-top: 30px;
+}
+
+.adventures-section h2 {
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+}
+
+.adventures-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    gap: 20px; /* Gap between figures */
+}
+
+.adventures-container figure {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align content */
+}
+
+.adventures-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners if desired */
+}
+
+.adventures-container figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666; /* Adjust color as needed */
 }
 
 
